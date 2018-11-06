@@ -1,7 +1,12 @@
 package com.anla.msg.util;
 
+import com.anla.core.Decoder;
+import com.anla.core.Encoder;
 import com.anla.msg.Header;
+import com.anla.msg.MsgType;
 import io.netty.buffer.ByteBuf;
+
+import java.io.UnsupportedEncodingException;
 
 /**
  * @user anLA7856
@@ -16,6 +21,19 @@ public class HeaderSerializer {
     }
 
     public void serialize(ByteBuf out, Header header) throws Exception{
-        Enco
+        Encoder.writeLong(out, header.getMsgNum());
+        Encoder.writeByte(out, header.getType().getType());
+        Encoder.writeString(out, header.getMsgTime());
+    }
+
+    public Header deserialize(ByteBuf in) throws UnsupportedEncodingException {
+        long msgNum = Decoder.readLong(in);
+        byte type = Decoder.readByte(in);
+        String msgTime = Decoder.readString(in);
+        Header header = new Header();
+        header.setMsgNum(msgNum);
+        header.setType(MsgType.getMsgTypeEnum(type));
+        header.setMsgTime(msgTime);
+        return header;
     }
 }

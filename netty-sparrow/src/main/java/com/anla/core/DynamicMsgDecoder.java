@@ -1,5 +1,8 @@
 package com.anla.core;
 
+import com.anla.msg.Header;
+import com.anla.msg.MsgType;
+import com.anla.msg.util.HeaderSerializer;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
@@ -35,7 +38,10 @@ public class DynamicMsgDecoder extends LengthFieldBasedFrameDecoder {
             }
             int msgLen = frame.readInt();
             // header
-            H
+            Header header = HeaderSerializer.getInstance().deserialize(frame);
+            // body
+            MsgType msgType = header.getType();
+            BodySerializer<? extends Body> bodySerializer = getBodySerializer(msgType)
 
         }catch (Throwable cause){
 
