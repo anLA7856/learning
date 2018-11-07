@@ -5,7 +5,7 @@ import org.mybatis.generator.api.ShellRunner;
 /**
  * @Author: luoan
  * @Date: 2018/11/7 16:18
- * @Description:
+ * @Description: https://my.oschina.net/wangmengjun/blog/785306
  */
 public class Run {
 
