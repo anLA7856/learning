@@ -1,0 +1,5 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://192.168.1.33/game_opt_mng?tinyInt1isBit=false
+  username: auroratest
+  password: 2017hvsgjgl2ggsgsg
