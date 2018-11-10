@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d36828b-968a-431c-a135-45119b6e7cde" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/BodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Tail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartBeatReqBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartbeatRespBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginReqBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginRespBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LogoutBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/RandomCodeBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SslBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SymEncryption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/DefaultBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartReqBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartRespBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginReqBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginRespBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LogoutBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/RandomCodeBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SslBodySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SymEncryptionSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/TailSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/factory/SerializerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/CommenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/HeartBeatServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/LoginRespHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SslServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SymEncryptionServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/BodySerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/BodySerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,11 +52,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DynamicMsgDecoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="588">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,8 +79,8 @@
       <file leaf-file-name="ServerInitialHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="4">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DynamicMsgDecoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java">
+      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+            <state relative-caret-position="277">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,52 +100,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodySerializer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/BodySerializer.java">
+      <file leaf-file-name="SslServerHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SslServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicMsgEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TailSerializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/TailSerializer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Body.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Header.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderSerializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,51 +136,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Decoder.java">
+      <file leaf-file-name="CommenUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/CommenUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="189">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/MsgType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="29" column="40" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelOption.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.22.Final/netty-all-4.1.22.Final-sources.jar!/io/netty/channel/ChannelOption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1827">
-              <caret line="115" column="79" selection-start-line="115" selection-start-column="69" selection-end-line="115" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -176,10 +161,12 @@
     <findStrings>
       <find>outByteBuf</find>
       <find>inByteBuf</find>
+      <find>thinking_fioa</find>
     </findStrings>
     <replaceStrings>
       <replace>out</replace>
       <replace>in</replace>
+      <replace>anLA7856</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,13 +180,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/netty-sparrow/pom.xml" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/util/CustomerThreadFactory.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/Server.java" />
-        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java" />
-        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Header.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/MsgType.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Header.java" />
@@ -207,9 +190,47 @@
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Encoder.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Decoder.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java" />
-        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body.java" />
         <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/BodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/DefaultBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartBeatReqBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/ReqBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body/HeartbeatRespBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartbeatRespBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HtRespBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginReqBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginReqBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginRespBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginRespBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LogoutBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LogoutBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/RandomCodeBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/RandomCodeBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SslBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SslBody.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SymEncryptionSerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SymEncryption.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/ReqBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartReqBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HtRespBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartRespBodySerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/factory/SerializerFactory.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Tail.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/CheckSumUtil.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/CommenUtil.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/TailSerializer.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Message.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ChildChannelHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgEncoder.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/HeartBeatServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SslServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SymEncryptionServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/LoginResqHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/LoginRespHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java" />
+        <option value="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java" />
       </list>
     </option>
   </component>
@@ -250,6 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,18 +343,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anla" type="462c0819:PsiDirectoryNode" />
               <item name="msg" type="462c0819:PsiDirectoryNode" />
-              <item name="body" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-sparrow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anla" type="462c0819:PsiDirectoryNode" />
-              <item name="msg" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="serializer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
@@ -359,13 +370,47 @@
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.netty:netty-all:4.1.22.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.netty:netty-all:4.1.22.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.22.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.netty:netty-all:4.1.22.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.22.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.netty:netty-all:4.1.22.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.22.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.netty:netty-all:4.1.22.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.22.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,7 +424,11 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.anla.server.handler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body" />
       <recent name="$PROJECT_DIR$/netty-sparrow/src/main/resources" />
     </key>
   </component>
@@ -450,7 +499,12 @@
       <updated>1541081945646</updated>
       <workItem from="1541081949751" duration="4080000" />
       <workItem from="1541429467671" duration="3760000" />
-      <workItem from="1541515489585" duration="2818000" />
+      <workItem from="1541515489585" duration="3480000" />
+      <workItem from="1541600736970" duration="367000" />
+      <workItem from="1541603724012" duration="2914000" />
+      <workItem from="1541688649718" duration="3640000" />
+      <workItem from="1541812122045" duration="1652000" />
+      <workItem from="1541836803152" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <created>1541086028776</created>
@@ -466,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541432931453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善 解析header代码，增加解析body代码">
+      <created>1541519903063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541519903063</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10658000" />
+    <option name="totallyTimeSpent" value="24167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -489,7 +550,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32919255" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25755286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27643505" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -542,86 +603,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first upload" />
     <MESSAGE value="增加 解析header代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加 解析header代码" />
+    <MESSAGE value="完善 解析header代码，增加解析body代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善 解析header代码，增加解析body代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/MsgType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.22.Final/netty-all-4.1.22.Final-sources.jar!/io/netty/channel/ChannelOption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1827">
@@ -633,70 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.22.Final/netty-all-4.1.22.Final-sources.jar!/io/netty/channel/ChannelOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1827">
-          <caret line="115" column="79" selection-start-line="115" selection-start-column="69" selection-end-line="115" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/util/CustomerThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,107 +675,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Encoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/Decoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
+        <state relative-caret-position="735">
           <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="189">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/MsgType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="588">
           <caret line="29" column="40" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/HeaderSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="588">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartBeatReqBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/BodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/DefaultBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/HeartbeatRespBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginReqBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginReqBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LoginRespBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LoginRespBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/LogoutBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/LogoutBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/RandomCodeBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/RandomCodeBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SslBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/SymEncryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SymEncryptionSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/SslBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartReqBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Tail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/factory/SerializerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/HeartRespBodySerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/util/CommenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -866,25 +862,130 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+        <state>
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/Body.java">
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ChildChannelHandler.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.22.Final/netty-all-4.1.22.Final-sources.jar!/io/netty/handler/timeout/IdleState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="154">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/body/BodySerializer.java">
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/HeartBeatServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SymEncryptionServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="16" column="94" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/core/DynamicMsgEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/msg/serializer/TailSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/SslServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/LoginRespHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/handler/ServerInitialHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.22.Final/netty-all-4.1.22.Final-sources.jar!/io/netty/util/concurrent/EventExecutorGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-sparrow/src/main/java/com/anla/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

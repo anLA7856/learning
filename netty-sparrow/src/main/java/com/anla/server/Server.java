@@ -1,5 +1,6 @@
 package com.anla.server;
 
+import com.anla.server.handler.ServerInitialHandler;
 import com.anla.util.CustomerThreadFactory;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -26,7 +27,7 @@ public class Server {
         bootstrap.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_BACKLOG, 1024)   //https://blog.csdn.net/zhousenshan/article/details/72859923
-                .childHandler(new ChildChannelHandler());
+                .childHandler(new ServerInitialHandler());
         ChannelFuture future = bootstrap.bind(port);
         LOGGER.info("server started at port:{}", port);
         future.addListener((param)->{
@@ -36,5 +37,14 @@ public class Server {
                 LOGGER.info("server bind failed", param.cause());
             }
         });
+    }
+
+    public void stop(){
+        if(bossGroup != null){
+            bossGroup.shutdownGracefully();
+        }
+        if(workerGroup != null){
+            workerGroup.shutdownGracefully();
+        }
     }
 }

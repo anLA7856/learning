@@ -1,6 +1,4 @@
-package com.anla.msg.body;
-
-import com.anla.msg.MsgType;
+package com.anla.msg;
 
 /**
  * @user anLA7856
