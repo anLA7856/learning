@@ -19,7 +19,7 @@ public class TriggerHandler extends ChannelInboundHandlerAdapter {
         if(evt instanceof TriggerEvent){
             TriggerEvent triggerEvent = (TriggerEvent) evt;
             LOGGER.info("trigger TriggerHanlder {}", triggerEvent);
-            triggerEvent.trigger(ctx, TriggerEvent.class);
+            triggerEvent.trigger(ctx, TriggerHandler.class);
         }else {
             super.userEventTriggered(ctx, evt);
         }

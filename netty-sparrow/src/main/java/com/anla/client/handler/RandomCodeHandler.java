@@ -23,7 +23,7 @@ public class RandomCodeHandler extends ChannelInboundHandlerAdapter implements I
         ctx.writeAndFlush(buildRandomCodeBody());
         // 发起登录请求
         LoginHandler loginHandler = new LoginHandler();
-        ctx.pipeline().addBefore(TriggerEvent.class.getSimpleName(), RandomCodeHandler.class.getSimpleName(), loginHandler);
+        ctx.pipeline().addBefore(TriggerHandler.class.getSimpleName(), LoginHandler.class.getSimpleName(), loginHandler);
     }
 
     private Object buildRandomCodeBody() {

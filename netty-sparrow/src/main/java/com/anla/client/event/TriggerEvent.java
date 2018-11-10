@@ -70,7 +70,7 @@ public enum TriggerEvent {
 
 
     public void trigger(ChannelHandlerContext ctx, Class<?> baseClazz){
-        trigger0(ctx, baseClazz);
+        trigger0(ctx, baseClazz).launch(ctx);
     }
 
     /**
