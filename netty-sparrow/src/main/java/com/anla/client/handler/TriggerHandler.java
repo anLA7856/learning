@@ -14,6 +14,14 @@ import org.apache.logging.log4j.Logger;
 public class TriggerHandler extends ChannelInboundHandlerAdapter {
     private static final Logger LOGGER = LogManager.getLogger(TriggerHandler.class);
 
+    /**
+     * 这是user手动trigger才会捕获到的事件
+     * ctx.fireUserEventTriggered(TriggerEvent.SYM_ENCRYPTION_EVENT);
+     * 然后去调用triggerEvent的trigger方法将该类性trigger加入并执行lanuch方法。
+     * @param ctx
+     * @param evt
+     * @throws Exception
+     */
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         if(evt instanceof TriggerEvent){

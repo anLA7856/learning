@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--数据库驱动-->
+    <properties resource="generator.yml"/>
+    <context id="DB2Tables"  targetRuntime="MyBatis3">
+        <plugin type="com.hippo.gameoptmng.plugin.MysqlPaginationPlugin" />    <!--放第一个子节点-->
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.1.33/game_opt_mng?tinyInt1isBit=false" userId="auroratest" password="2017hvsgjgl2ggsgsg">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="com.hippo.gameoptmng.model.auto" targetProject="mybatisgeneratorlimit\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--生成映射文件存放位置-->
+        <sqlMapGenerator targetPackage="com.hippo.gameoptmng.mapper.auto" targetProject="mybatisgeneratorlimit\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!--生成Dao类存放位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hippo.gameoptmng.dao.auto" targetProject="mybatisgeneratorlimit\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!--生成对应表及类名-->
+        <table tableName="app_publisher_channel_rel" domainObjectName="AppPublisherChannelRel">
+        </table>
+        
+		<table tableName="publisher_channel" domainObjectName="PublisherChannel" >
+        </table>
+    </context>
+</generatorConfiguration>

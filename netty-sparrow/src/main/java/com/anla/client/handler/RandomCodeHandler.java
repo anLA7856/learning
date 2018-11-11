@@ -1,6 +1,5 @@
 package com.anla.client.handler;
 
-import com.anla.client.event.TriggerEvent;
 import com.anla.msg.Message;
 import com.anla.msg.body.RandomCodeBody;
 import io.netty.channel.ChannelHandlerContext;
@@ -23,6 +22,7 @@ public class RandomCodeHandler extends ChannelInboundHandlerAdapter implements I
         ctx.writeAndFlush(buildRandomCodeBody());
         // 发起登录请求
         LoginHandler loginHandler = new LoginHandler();
+        // 不走trigger，直接通过lauch方法在triggerHandler之前加入
         ctx.pipeline().addBefore(TriggerHandler.class.getSimpleName(), LoginHandler.class.getSimpleName(), loginHandler);
     }
 

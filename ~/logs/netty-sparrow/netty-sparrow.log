@@ -1,0 +1,385 @@
+2018-11-10 22:03:57.329 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-10 22:03:57.408 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-10 22:03:57.511 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-10 22:04:10.085 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-10 22:04:12.582 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-10 22:04:12.638 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-10 22:04:21.100 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.util.NoSuchElementException: TriggerEvent
+	at io.netty.channel.DefaultChannelPipeline.getContextOrDie(DefaultChannelPipeline.java:1099) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:260) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.event.TriggerEvent$1.trigger0(TriggerEvent.java:23) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.ClientInitHandler.channelActive(ClientInitHandler.java:20) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:64) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1402) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:921) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:311) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:633) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-10 22:04:21.288 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:26.298 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 2
+2018-11-10 22:04:26.299 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:31.303 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 3
+2018-11-10 22:04:31.304 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:36.308 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 4
+2018-11-10 22:04:36.309 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:41.313 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 5
+2018-11-10 22:04:41.314 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:46.318 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 6
+2018-11-10 22:04:46.319 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:04:46.320 [sparrow_0] ERROR HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:29) - heartbeat timeout. close channel /127.0.0.1:52234
+2018-11-10 22:04:46.337 [clientGroup_0] INFO  ClientInitHandler.channelInactive(ClientInitHandler.java:25) - inactive channel /127.0.0.1:8989
+2018-11-10 22:05:40.658 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-10 22:05:40.725 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:37) - server bind failed
+java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_162]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_162]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_162]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_162]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1338) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:999) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-10 22:05:41.570 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-10 22:05:46.576 [sparrow_1] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-10 22:05:46.578 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 22:05:48.637 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-10 22:05:48.656 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-10 22:05:48.660 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.util.NoSuchElementException: TriggerEvent
+	at io.netty.channel.DefaultChannelPipeline.getContextOrDie(DefaultChannelPipeline.java:1099) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:260) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.event.TriggerEvent$1.trigger0(TriggerEvent.java:23) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.ClientInitHandler.channelActive(ClientInitHandler.java:20) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:64) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1402) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:921) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:311) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:633) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-10 22:05:58.422 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-10 22:05:58.469 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-10 22:05:59.536 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-10 22:06:04.262 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-10 22:06:06.964 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-10 22:06:07.086 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-10 22:06:22.829 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.util.NoSuchElementException: TriggerEvent
+	at io.netty.channel.DefaultChannelPipeline.getContextOrDie(DefaultChannelPipeline.java:1099) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:260) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.event.TriggerEvent$1.trigger0(TriggerEvent.java:23) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.ClientInitHandler.channelActive(ClientInitHandler.java:20) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:64) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1402) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:921) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:311) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:633) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-10 22:06:23.048 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:58:57.622 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-10 23:58:57.629 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-10 23:59:00.823 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-10 23:59:00.824 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-10 23:59:00.839 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-10 23:59:00.840 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.util.NoSuchElementException: TriggerEvent
+	at io.netty.channel.DefaultChannelPipeline.getContextOrDie(DefaultChannelPipeline.java:1099) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:260) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.event.TriggerEvent$1.trigger0(TriggerEvent.java:23) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.ClientInitHandler.channelActive(ClientInitHandler.java:20) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:64) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1402) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:921) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:311) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:633) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-10 23:59:05.833 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-10 23:59:05.932 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:10.935 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 2
+2018-11-10 23:59:10.937 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:15.938 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 3
+2018-11-10 23:59:15.939 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:20.940 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 4
+2018-11-10 23:59:20.941 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:25.942 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 5
+2018-11-10 23:59:25.943 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:30.945 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 6
+2018-11-10 23:59:30.945 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-10 23:59:35.851 [sparrow_0] ERROR HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:29) - heartbeat timeout. close channel /127.0.0.1:39080
+2018-11-10 23:59:35.869 [clientGroup_0] INFO  ClientInitHandler.channelInactive(ClientInitHandler.java:25) - inactive channel /127.0.0.1:8989
+2018-11-11 00:14:35.700 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-11 00:14:35.713 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-11 00:14:39.528 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-11 00:14:39.529 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-11 00:14:39.532 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-11 00:14:39.533 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.util.NoSuchElementException: TriggerEvent
+	at io.netty.channel.DefaultChannelPipeline.getContextOrDie(DefaultChannelPipeline.java:1099) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:260) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.event.TriggerEvent$1.trigger0(TriggerEvent.java:23) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.ClientInitHandler.channelActive(ClientInitHandler.java:20) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:64) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:192) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelActive(DefaultChannelPipeline.java:1402) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:213) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:199) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:921) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:311) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:633) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-11 00:14:44.542 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-11 00:14:44.594 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:14:49.598 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 2
+2018-11-11 00:14:49.599 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:14:54.600 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 3
+2018-11-11 00:14:54.602 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:14:59.603 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 4
+2018-11-11 00:14:59.603 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:13.491 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-11 00:15:13.503 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-11 00:15:17.346 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-11 00:15:17.347 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-11 00:15:17.421 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-11 00:15:22.802 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-11 00:15:25.298 [clientGroup_0] INFO  SslHandler.launch(SslHandler.java:23) - ssl sent
+2018-11-11 00:15:25.408 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:25.408 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:15:25.420 [sparrow_0] INFO  SslServerHandler.channelRead(SslServerHandler.java:24) - receive ssl message
+2018-11-11 00:15:25.420 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:15:25.421 [clientGroup_0] INFO  SslHandler.channelRead(SslHandler.java:32) - receive ssl resp. launch symEncryption
+2018-11-11 00:15:25.421 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SymEncryptionHandler
+2018-11-11 00:15:27.291 [clientGroup_0] INFO  SymEncryptionHandler.launch(SymEncryptionHandler.java:23) - symEncription sent
+2018-11-11 00:15:27.292 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:15:27.294 [sparrow_0] INFO  SymEncryptionServerHandler.channelRead(SymEncryptionServerHandler.java:24) - receive sym_encryptiom req.
+2018-11-11 00:15:27.294 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:15:27.296 [clientGroup_0] INFO  SymEncryptionHandler.channelRead(SymEncryptionHandler.java:33) - receive symEncryption resp. launch randomCode.
+2018-11-11 00:15:27.297 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder RandomCodeHandler
+2018-11-11 00:15:27.312 [clientGroup_0] INFO  RandomCodeHandler.launch(RandomCodeHandler.java:22) -  random code sent
+2018-11-11 00:15:27.313 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:RandomCode, msgLen:50
+2018-11-11 00:15:27.315 [clientGroup_0] ERROR TriggerHandler.exceptionCaught(TriggerHandler.java:30) - happen unknow exception. 
+java.lang.IllegalArgumentException: Duplicate handler name: RandomCodeHandler
+	at io.netty.channel.DefaultChannelPipeline.checkDuplicateName(DefaultChannelPipeline.java:1081) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.filterName(DefaultChannelPipeline.java:302) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:259) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.addBefore(DefaultChannelPipeline.java:249) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.RandomCodeHandler.launch(RandomCodeHandler.java:26) ~[classes/:?]
+	at com.anla.client.event.TriggerEvent.trigger(TriggerEvent.java:73) ~[classes/:?]
+	at com.anla.client.handler.TriggerHandler.userEventTriggered(TriggerHandler.java:22) ~[classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:329) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:315) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:307) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.SymEncryptionHandler.channelRead(SymEncryptionHandler.java:34) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at com.anla.client.handler.SslHandler.channelRead(SslHandler.java:35) [classes/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1414) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:945) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:146) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-11 00:15:32.299 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 0
+2018-11-11 00:15:32.300 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:37.303 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-11 00:15:37.304 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:42.308 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 2
+2018-11-11 00:15:42.309 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:47.313 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 3
+2018-11-11 00:15:47.314 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:52.319 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 4
+2018-11-11 00:15:52.320 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:15:57.324 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 5
+2018-11-11 00:15:57.325 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:16:02.329 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 6
+2018-11-11 00:16:02.330 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:16:02.331 [sparrow_0] ERROR HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:29) - heartbeat timeout. close channel /127.0.0.1:40204
+2018-11-11 00:16:02.345 [clientGroup_0] INFO  ClientInitHandler.channelInactive(ClientInitHandler.java:25) - inactive channel /127.0.0.1:8989
+2018-11-11 00:17:31.388 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-11 00:17:31.395 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:37) - server bind failed
+java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_162]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_162]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_162]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_162]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1338) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:999) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2018-11-11 00:17:34.549 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-11 00:17:34.550 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-11 00:17:34.554 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-11 00:17:34.555 [clientGroup_0] INFO  SslHandler.launch(SslHandler.java:23) - ssl sent
+2018-11-11 00:17:34.630 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:17:34.634 [sparrow_1] INFO  SslServerHandler.channelRead(SslServerHandler.java:24) - receive ssl message
+2018-11-11 00:17:34.635 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:17:34.645 [clientGroup_0] INFO  SslHandler.channelRead(SslHandler.java:32) - receive ssl resp. launch symEncryption
+2018-11-11 00:17:34.645 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SymEncryptionHandler
+2018-11-11 00:17:34.646 [clientGroup_0] INFO  SymEncryptionHandler.launch(SymEncryptionHandler.java:23) - symEncription sent
+2018-11-11 00:17:34.647 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:17:34.648 [sparrow_1] INFO  SymEncryptionServerHandler.channelRead(SymEncryptionServerHandler.java:24) - receive sym_encryptiom req.
+2018-11-11 00:17:34.648 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:17:34.649 [clientGroup_0] INFO  SymEncryptionHandler.channelRead(SymEncryptionHandler.java:33) - receive symEncryption resp. launch randomCode.
+2018-11-11 00:17:34.650 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder RandomCodeHandler
+2018-11-11 00:17:34.651 [clientGroup_0] INFO  RandomCodeHandler.launch(RandomCodeHandler.java:22) -  random code sent
+2018-11-11 00:17:34.652 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:RandomCode, msgLen:50
+2018-11-11 00:17:39.650 [sparrow_1] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 0
+2018-11-11 00:17:39.650 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:17:44.664 [sparrow_1] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-11 00:17:44.665 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:17:49.666 [sparrow_1] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 2
+2018-11-11 00:17:49.667 [sparrow_1] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:17:58.872 [Thread-0] INFO  Server.start(Server.java:32) - server started at port:8989
+2018-11-11 00:17:58.883 [nioEventLoopGroup-2-1] INFO  Server.lambda$start$0(Server.java:35) - server bind success!
+2018-11-11 00:18:02.148 [clientGroup_0] INFO  Client.lambda$start$0(Client.java:28) - connect 127.0.0.1 : 8989 success
+2018-11-11 00:18:02.148 [clientGroup_0] INFO  ClientInitHandler.channelActive(ClientInitHandler.java:19) - channel is active , remote channel /127.0.0.1:8989
+2018-11-11 00:18:02.154 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SslHandler
+2018-11-11 00:18:02.155 [clientGroup_0] INFO  SslHandler.launch(SslHandler.java:23) - ssl sent
+2018-11-11 00:18:02.223 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:18:02.237 [sparrow_0] INFO  SslServerHandler.channelRead(SslServerHandler.java:24) - receive ssl message
+2018-11-11 00:18:02.238 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SSL, msgLen:47
+2018-11-11 00:18:02.239 [clientGroup_0] INFO  SslHandler.channelRead(SslHandler.java:32) - receive ssl resp. launch symEncryption
+2018-11-11 00:18:02.239 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder SymEncryptionHandler
+2018-11-11 00:18:02.239 [clientGroup_0] INFO  SymEncryptionHandler.launch(SymEncryptionHandler.java:23) - symEncription sent
+2018-11-11 00:18:02.240 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:18:02.241 [sparrow_0] INFO  SymEncryptionServerHandler.channelRead(SymEncryptionServerHandler.java:24) - receive sym_encryptiom req.
+2018-11-11 00:18:02.242 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:SymEncryption, msgLen:45
+2018-11-11 00:18:02.243 [clientGroup_0] INFO  SymEncryptionHandler.channelRead(SymEncryptionHandler.java:33) - receive symEncryption resp. launch randomCode.
+2018-11-11 00:18:02.243 [clientGroup_0] INFO  TriggerHandler.userEventTriggered(TriggerHandler.java:21) - trigger TriggerHanlder RandomCodeHandler
+2018-11-11 00:18:02.244 [clientGroup_0] INFO  RandomCodeHandler.launch(RandomCodeHandler.java:22) -  random code sent
+2018-11-11 00:18:02.245 [clientGroup_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:RandomCode, msgLen:50
+2018-11-11 00:18:07.246 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 0
+2018-11-11 00:18:07.247 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
+2018-11-11 00:18:12.248 [sparrow_0] WARN  HeartBeatServerHandler.userEventTriggered(HeartBeatServerHandler.java:33) - heartbeat timeout. lossCount 1
+2018-11-11 00:18:12.249 [sparrow_0] INFO  DynamicMsgEncoder.encode(DynamicMsgEncoder.java:50) - --> encode msgType:heartbeatReq, msgLen:38
